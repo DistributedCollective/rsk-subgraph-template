@@ -1,0 +1,8 @@
+{
+    "network": "testnet",
+    "node": {
+        "network": "testnet",
+        "address": "https://testnet.sovryn.app/rpc",
+        "log_level": "debug"
+    }
+}
