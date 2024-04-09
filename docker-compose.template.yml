@@ -23,7 +23,7 @@ services:
       postgres_db: postgres
       ipfs: 'ipfs:5001'
       # Change next line if you want to connect to a different JSON-RPC endpoint
-      ethereum: '{{node.network}}:{{& node.address}}'
+      ethereum: '{{network}}:{{& node.address}}'
       GRAPH_LOG: '{{node.log_level}}'
   ipfs:
     image: ipfs/go-ipfs:v0.11.0

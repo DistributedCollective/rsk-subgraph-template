@@ -3,13 +3,16 @@
 This is a template subgraph that can be used to create a new subgraph. It contains everything you need to get started using a subgraph, as well as generic documentation.
 
 README Contents:
-1. [External documentation](#external-documentation)
-2. [Setup](#setup)
-3. [Scaffolding](#scaffolding)
-4. [File structure](#file-structure)
-5. [Testing](#testing)
-6. [Debugging](#debugging)
-7. [Other useful info](#useful-info)
+- [Template Subgraph](#template-subgraph)
+  - [External documentation](#external-documentation)
+  - [Setup](#setup)
+  - [Scaffolding](#scaffolding)
+  - [File structure](#file-structure)
+    - [Entities directory](#entities-directory)
+  - [Testing](#testing)
+    - [Matchstick](#matchstick)
+  - [Debugging](#debugging)
+  - [Useful info](#useful-info)
 
 
 ## External documentation
@@ -26,7 +29,7 @@ To run locally:
 - clone repo
 - Run `npm install`
 - Add a `.env.dev` file in the root of the project. Copy the contents of `.env.example` into this file (you can change the password to your own password if you wish)
-- Run `npm run prepare:RSK:testnet`. This will create the docker-compose.yml file and the subgraph.yaml file from the template files.
+- Run `npm run prepare:testnet`. This will create the docker-compose.yml file and the subgraph.yaml file from the template files.
 - Run `npm run dev:up`. This will run docker compose up -d and pass in your environment file.
 - Run `npm run codegen`. This will generate the ./generated folder with types and contract objects.
 - Run `npm run build` to generate the build folder
