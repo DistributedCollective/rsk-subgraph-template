@@ -1,7 +1,7 @@
 """
 Transaction data, including hash and timestamp
 """
-type Transaction @entity {
+type Transaction @entity(immutable: true) {
   """
   ID is transaction hash
   """
@@ -29,7 +29,7 @@ type Transaction @entity {
   functionSignature: String!
 }
 
-type User @entity {
+type User @entity(immutable: false) {
   id: ID!
   createdAt: Int!
 }
